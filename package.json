@@ -1,0 +1,36 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "express backend api",
+  "main": "app.js",
+  "scripts": {
+    "start": "pm2 start app.js --deep-monitoring --attach --name ahmmi-api-site",
+    "dev": "nodemon app.js",
+    "stop": "pm2 kill",
+    "restart": "git pull && npm stop && npm start",
+    "stash": "git stash && git stash drop"
+  },
+  "author": "AHMMI-KUN",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "form-data": "^4.0.1",
+    "fs-extra": "^11.2.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^6.2.1",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.6.9",
+    "nodemon": "^3.1.9",
+    "uuid": "^11.0.5",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "pm2": "^5.2.0",
+    "undici": "^7.2.1",
+    "mime-types": "^2.1.35",
+    "@google/generative-ai": "^0.21.0"
+  }
+}
